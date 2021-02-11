@@ -11,6 +11,7 @@ const login = () => {
                 <label htmlFor="password">Password</label>
                 <input type="text"/><br/>
                 <button name="login">Login</button>
+                <a href="">Forgot Password</a><br/>
                 <button name="register">Register</button>
             </form>
         </div>

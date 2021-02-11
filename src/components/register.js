@@ -9,11 +9,13 @@ const register = () => {
                 <input type="text"/><br/>
                 <label htmlFor="last-name">Last Name</label>
                 <input type="text"/><br/>
+                <label htmlFor="username">User Name</label>
+                <input type="text"/><br/>
                 <label htmlFor="mobileno">Mobile No</label>
                 <input type="text"/><br/>
                 <label htmlFor="email-id">E-mail</label>
                 <input type="text"/><br/>
-                <label htmlFor="username">User Name</label>
+                <label htmlFor="location">Location</label>
                 <input type="text"/><br/>
                 <label htmlFor="dob">DOB</label>
                 <input type="date"/><br/>
@@ -28,7 +30,11 @@ const register = () => {
                 <input type="text"/><br/>
                 <label htmlFor="repassword">Re-Enter Password</label>
                 <input type="text"/><br/>
+                <label htmlFor="profile-img">Profile Image</label>
+                <input type="file"name="photoimg" required/><br/>
                 <button name="signup">Signup</button>
+
+                
             </form>
         </div>
      );
