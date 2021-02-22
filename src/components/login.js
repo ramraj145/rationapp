@@ -5,20 +5,31 @@ import { NavLink } from 'react-router-dom';
 const login = () => {
     return ( 
         <>
-        
-        <div className="login mt-3">
-            <form style={{border:"2px red"}} action="">
-            <h4><strong>Login</strong></h4><br/>
-                <label htmlFor="Username">Username : &nbsp;</label>
-                <input type="text" placeholder="Username or Email" /><br/>
-                <br/>
-                <label htmlFor="Password">Passsword : &nbsp;</label>
-                <input type="text" placeholder="Password" /><br/><br/>
-                <button  className=" btn bg-primary login">Login</button><br/><br/>
-                <p>Dont have an account, <NavLink to="/register"> Register here</NavLink></p>
-                
+         <h3>Log In</h3>
+            <form>
+            <div className="form-group">
+                    <label>Username</label>
+                    <input type="uname" className="form-control" placeholder="Enter username" />
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <input type="pass" className="form-control" placeholder="Enter password" />
+                </div>
+
+                <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
+
+                <button type="submit" className="btn btn-primary btn-block">Submit</button>
+                <button type="signup" className="btn btn-primary btn-block" href="register">Register</button>
+                <p className="forgot-password text-right">
+                    Forgot <a href="#">password?</a>
+                </p>
             </form>
-        </div>
         </>
      );
 }
